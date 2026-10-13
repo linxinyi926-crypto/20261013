@@ -1,0 +1,65 @@
+<!doctype html>
+<!-- 指定文件使用 HTML5 標準。 -->
+<html lang="zh-Hant">
+<!-- 設定頁面語言為繁體中文。 -->
+<head>
+  <!-- 指定 UTF-8 編碼，確保中文題目正常顯示。 -->
+  <meta charset="UTF-8">
+  <!-- 讓頁面依裝置寬度縮放，並支援瀏海與安全區域。 -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <!-- 設定瀏覽器分頁標題。 -->
+  <title>p5.js 簡易指令測驗</title>
+  <!-- 預先連線到 Google Fonts 網域。 -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <!-- 預先連線到 Google Fonts 靜態檔案網域。 -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- 載入中文 Noto Serif TC 與英文數字 Anton 字型。 -->
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Noto+Serif+TC:wght@400;600;700&display=swap" rel="stylesheet">
+  <!-- 載入指定版本的 p5.js。 -->
+  <script src="https://cdn.jsdelivr.net/npm/p5@1.11.1/lib/p5.min.js"></script>
+  <!-- 載入本專案主要程式，defer 讓 HTML 先完成解析。 -->
+  <script src="sketch.js" defer></script>
+  <!-- 設定全螢幕與響應式頁面樣式。 -->
+  <style>
+    /* 讓所有元素的寬高包含 padding 與 border。 */
+    * {
+      box-sizing: border-box;
+    }
+
+    /* 讓根元素填滿視窗並禁止頁面捲動。 */
+    html {
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+    }
+
+    /* 讓 body 填滿視窗、移除預設邊距並設定背景色。 */
+    body {
+      width: 100%;
+      height: 100%;
+      min-width: 0;
+      min-height: 0;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background: #f4f7fb;
+      font-family: "Noto Serif TC", serif;
+    }
+
+    /* 讓 p5.js 畫布成為沒有底部空白的區塊元素。 */
+    canvas {
+      display: block;
+      width: 100vw;
+      height: 100vh;
+      max-width: 100%;
+      max-height: 100%;
+      margin: 0;
+      padding: 0;
+      touch-action: none;
+    }
+  </style>
+</head>
+<!-- 建立頁面主體，p5.js 會自動將畫布加入此處。 -->
+<body>
+</body>
+</html>
